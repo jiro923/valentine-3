@@ -13,21 +13,27 @@
             text-align: center;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
         h1 {
             font-family: 'Great Vibes', cursive;
             font-size: 3em;
-            margin-top: 50px;
+            margin: 20px;
         }
         .message {
             font-size: 1.5em;
-            margin: 20px;
+            margin: 10px;
         }
         .button-container {
             display: flex;
             justify-content: center;
-            margin: 20px;
-            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+            gap: 20px;
+            flex-wrap: wrap;
+            position: relative;
         }
         .button {
             background-color: #B22222; /* Firebrick */
@@ -38,14 +44,14 @@
             font-size: 1.2em;
             cursor: pointer;
             text-decoration: none;
-            margin: 10px; /* Add margin for spacing */
             transition: background-color 0.3s;
+            position: relative;
         }
         .button:hover {
             background-color: #FF6347; /* Tomato */
         }
         .footer {
-            margin-top: 50px;
+            margin-top: 30px;
             font-size: 1em;
         }
     </style>
@@ -57,32 +63,32 @@
         <p>Hey Babyy :3</p>
     </div>
 
-    <div>
-        <audio controls>
-            <source src="https://youtu.be/JSxzqeSi9NQ?si=bDUMO6jF11-hPgYP"> <!-- Valid audio URL -->
-            Your browser does not support the audio element.
-        </audio>
-    </div>
+    <audio id="valentineSong" src="https://docs.google.com/uc?export=download&id=1xqjwLtFFrFHiZ_a_nD0zV9hCPQyLJTXw"></audio>
 
     <div class="button-container">
-        <a href="#" class="button" id="yesButton">Yes!</a>
-        <a href="#" class="button" id="noButton" onclick="moveNoButton(event)">No!</a>
+        <button class="button" id="yesButton" onclick="playSong()">Yes!</button>
+        <button class="button" id="noButton" onclick="moveNoButton(event)">No!</button>
     </div>
 
     <div class="footer">
-       
+      
     </div>
 
     <script>
+        function playSong() {
+            const song = document.getElementById("valentineSong");
+            song.play();
+            alert("Yay! Can't wait to spend Valentine's with you ❤️");
+        }
+
         function moveNoButton(event) {
-            event.preventDefault(); // Prevent the default link behavior
+            event.preventDefault();
             const noButton = document.getElementById('noButton');
-            // Move the button to a random position on the screen
-            const randomX = Math.floor(Math.random() * (window.innerWidth - 150)); // 150 is the button width
-            const randomY = Math.floor(Math.random() * (window.innerHeight - 50)); // 50 is the button height
+            const randomX = Math.random() * (window.innerWidth - 200);
+            const randomY = Math.random() * (window.innerHeight - 100);
             noButton.style.position = 'absolute';
-            noButton.style.left = randomX + 'px';
-            noButton.style.top = randomY + 'px';
+            noButton.style.left = `${randomX}px`;
+            noButton.style.top = `${randomY}px`;
         }
     </script>
 
