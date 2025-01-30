@@ -62,11 +62,11 @@
         <p>Hey Babyy :3</p>
     </div>
     
-    <img src="https://www.google.com/search?sca_esv=171dd60bbbb03aa4&rlz=1C1GCEA_enPH1087PH1087&sxsrf=AHTn8zptjfCEMWVkQgbiUpMKcn-pOsc1uw:1738208949591&q=lilies+flower&udm=2&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBpwxALD7bRaeOIZxqOFEngxxsUnG07Fj19ytIn9fWqb4sDjxelNUNq0MnGNTvDqYWgEUkp0YHdVxbWr4arEYI0A-9T3hEf7j8afo8Qqr0ahVX5ht8_5rn3axFrf3YrgOB4kmVELVOP6cKIX0bdzQxUrJhHIHagr-1t5vbFY8LmR9ZIukOg&sa=X&ved=2ahUKEwibifH3xJyLAxUW1TQHHRh4DBIQtKgLegQIHRAB&biw=1451&bih=1057&dpr=0.9#imgrc=1-D74lWzqdzRbM&imgdii=6kWaRnvSdhh8yM"> <!-- Valid image URL -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Lilium_candidum_1.jpg/800px-Lilium_candidum_1.jpg" alt="Lilies" class="lily-image"> <!-- Valid image URL -->
 
     <div>
         <audio controls>
-            <source src="https://open.spotify.com/track/3eBHh35RljNlNtM3KhKhmM?si=488bc4dc3cb6447b" type="audio/mpeg"> <!-- Valid audio URL -->
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"> <!-- Valid audio URL -->
             Your browser does not support the audio element.
         </audio>
     </div>
@@ -77,7 +77,7 @@
     </div>
 
     <div class="footer">
-        <p>"Love is not about how many days, months, or years you have been together. Love is about how much you love each other every single day."</p>
+
     </div>
 
     <script>
