@@ -18,6 +18,8 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
+            position: relative;
+            overflow: hidden;
         }
         h1 {
             font-family: 'Great Vibes', cursive;
@@ -54,6 +56,15 @@
             margin-top: 30px;
             font-size: 1em;
         }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            .button {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -64,20 +75,19 @@
     </div>
 
     <audio id="valentineSong" src="https://docs.google.com/uc?export=download&id=1xqjwLtFFrFHiZ_a_nD0zV9hCPQyLJTXw"></audio>
+    <audio id="loveSong" src="https://open.spotify.com/track/4HFAhNtnR6mXagPhUBqY07" type="audio/mpeg"></audio>
 
     <div class="button-container">
-        <button class="button" id="yesButton" onclick="playSong()">Yes!</button>
-        <button class="button" id="noButton" onclick="moveNoButton(event)">No!</button>
+        <button class="button" id="yesButton" onclick="playLoveSong()">Yes!</button>
+        <button class="button" id="noButton" onmouseover="moveNoButton(event)">No!</button>
     </div>
 
-    <div class="footer">
-      
-    </div>
+    <div class="footer"></div>
 
     <script>
-        function playSong() {
-            const song = document.getElementById("valentineSong");
-            song.play();
+        function playLoveSong() {
+            const loveSong = document.getElementById("loveSong");
+            loveSong.play();
             alert("Yay! Can't wait to spend Valentine's with you ❤️");
         }
 
