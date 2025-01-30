@@ -23,16 +23,11 @@
             font-size: 1.5em;
             margin: 20px;
         }
-        .lily-image {
-            width: 80%;
-            max-width: 300px;
-            height: auto;
-            margin: 20px;
-        }
         .button-container {
             display: flex;
             justify-content: center;
             margin: 20px;
+            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
         }
         .button {
             background-color: #B22222; /* Firebrick */
@@ -43,7 +38,7 @@
             font-size: 1.2em;
             cursor: pointer;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 10px; /* Add margin for spacing */
             transition: background-color 0.3s;
         }
         .button:hover {
@@ -61,12 +56,10 @@
     <div class="message">
         <p>Hey Babyy :3</p>
     </div>
-    
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Lilium_candidum_1.jpg/800px-Lilium_candidum_1.jpg" alt="Lilies" class="lily-image"> <!-- Valid image URL -->
 
     <div>
         <audio controls>
-            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"> <!-- Valid audio URL -->
+            <source src="https://open.spotify.com/track/3eBHh35RljNlNtM3KhKhmM?si=f095f0322b60457f" type="audio/mpeg"> <!-- Valid audio URL -->
             Your browser does not support the audio element.
         </audio>
     </div>
@@ -77,7 +70,7 @@
     </div>
 
     <div class="footer">
-
+       
     </div>
 
     <script>
